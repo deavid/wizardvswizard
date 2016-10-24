@@ -7,7 +7,7 @@ if command -v nginx >/dev/null 2>&1
 then
 	tail -s.1 -f nginx-access.log &
 TAILPID=$!
-	nginx -c $(pwd)/nginx.conf  -p $(pwd) -g "error_log nginx-errolog;"
+	nginx -c $(pwd)/nginx.conf  -p $(pwd) -g "error_log nginx-error.log;"
 	kill $TAILPID
         exit 0;
 fi
