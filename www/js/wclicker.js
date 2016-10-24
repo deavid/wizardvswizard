@@ -273,8 +273,8 @@ function play_game() {
     var i;
     for (i=0; i < EARN_SPEED; i++) {
         game.mana0 += parseFloat(game.lvmana0) / 100.0;
-        game.mana1 += parseFloat(game.lvmana1) / 100.0 + parseFloat(game.lvmana0) / 5000.0;
-        game.mana2 += parseFloat(game.lvmana2) / 100.0 + parseFloat(game.lvmana1) / 5000.0;
+        game.mana1 += parseFloat(game.lvmana1) / 100.0;
+        game.mana2 += parseFloat(game.lvmana2) / 100.0;
     }
     update_mana_levels();
 
