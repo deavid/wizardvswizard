@@ -154,10 +154,10 @@ function title_text_clicked() {
     sprites.player.x = 50 + 30;
     sprites.player.y = 70 + 30;
 
-
+    var sphere_separation = GAME_WIDTH * 0.12;
     sprites.sphere0 = getSphereSprite("grey");
-    sprites.sphere0.x = GAME_WIDTH * 0.9;
-    sprites.sphere0.y = GAME_HEIGHT * 0.9;
+    sprites.sphere0.x = GAME_WIDTH * 0.9 - sphere_separation * 0;
+    sprites.sphere0.y = GAME_HEIGHT * 0.1;
 
     sprites.sphere0text = new PIXI.extras.BitmapText("Lvl\n0.00", {font: "32px LatoMediumBold32", align: "center"});
     sprites.sphere0text.anchor.set(0.5, 0.5);
@@ -167,8 +167,8 @@ function title_text_clicked() {
     sprites.sphere0.addChild(sprites.sphere0text);
 
     sprites.sphere1 = getSphereSprite("red");
-    sprites.sphere1.x = GAME_WIDTH * 0.7;
-    sprites.sphere1.y = GAME_HEIGHT * 0.9;
+    sprites.sphere1.x = GAME_WIDTH * 0.9 - sphere_separation * 1;
+    sprites.sphere1.y = GAME_HEIGHT * 0.1;
 
     sprites.sphere1text = new PIXI.extras.BitmapText("Lvl\n0.00", {font: "32px LatoMediumBold32", align: "center"});
     sprites.sphere1text.anchor.set(0.5, 0.5);
@@ -178,8 +178,8 @@ function title_text_clicked() {
     sprites.sphere1.addChild(sprites.sphere1text);
 
     sprites.sphere2 = getSphereSprite("blue");
-    sprites.sphere2.x = GAME_WIDTH * 0.5;
-    sprites.sphere2.y = GAME_HEIGHT * 0.9;
+    sprites.sphere2.x = GAME_WIDTH * 0.9 - sphere_separation * 2;
+    sprites.sphere2.y = GAME_HEIGHT * 0.1;
 
     sprites.sphere2text = new PIXI.extras.BitmapText("Lvl\n0.00", {font: "32px LatoMediumBold32", align: "center"});
     sprites.sphere2text.anchor.set(0.5, 0.5);
